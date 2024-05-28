@@ -1,7 +1,6 @@
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv
-
 from flask import Flask, render_template
 
 dotenv_path = join(dirname(__file__), '.env')
@@ -28,6 +27,5 @@ def kontak():
 @app.route('/order')
 def order():
     return render_template('order.html')
-
 if __name__ == '__main__':  
-    app.run('0.0.0.0', port=5000,debug=True)
+    app.run('0.0.0.0', port=5000, debug=True)
