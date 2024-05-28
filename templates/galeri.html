@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Serif+Display:ital@1&family=League+Gothic&family=Noto+Serif+Display:wght@100&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <title>Warbund</title>
+    <style>
+        @import url("/static/css/default.css");
+        @import url("/static/css/gnb.css");
+
+        .banner {
+            width: 100%;
+            height: 500px;
+            background-image: url("/static/image/banner galeri jadi.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner>.isi>h1 {
+            font-size: 80px;
+            margin-top: 250px;
+            font-family: "Alex Brush", cursive;
+            color: white;
+            font-size: 70px;
+            font-weight: 500;
+        }
+
+        .foto {
+            width: 100%;
+            height: 1443px;
+            background-image: url("/static/image/background\ kayu.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .foto-kiri>img {
+            width: 600px;
+            height: 298px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+        }
+
+        .foto-kanan>img {
+            width: 600px;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+        }
+
+        .banner-menu {
+            width: 100%;
+            height: 350px;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-image: url("/static/image/marshal-quast-v69MsNF7FAU-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner-menu>p {
+            color: white;
+            font-size: 40px;
+            font-weight: 700;
+            align-self: start;
+            margin-left: 50px;
+            margin-top: 100px;
+            font-family: "Montserrat", Sans-serif;
+        }
+
+        .banner-menu>a>button {
+            background-color: green;
+            color: white;
+            width: 240px;
+            height: 60px;
+            border-radius: 20px;
+            align-self: start;
+            margin-left: 50px;
+            margin-bottom: 70px;
+            cursor: pointer;
+        }
+
+        .banner-order {
+            width: 100%;
+            height: 350px;
+            background-image: url("/static/image/order.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner-order>img {
+            height: 340px;
+            background-size: cover;
+            background-position: center;
+            margin-left: 50px;
+            border-radius: 20px;
+        }
+
+        .banner-order>.kata>h1 {
+            color: white;
+            align-self: start;
+            margin-left: 50px;
+            font-size: 35px;
+            font-weight: 600;
+            font-family: "Montserrat", Sans-serif;
+        }
+
+        .banner-order>.kata>h2 {
+            color: white;
+            align-self: start;
+            margin-left: 50px;
+            font-size: 15px;
+            font-family: "Montserrat", Sans-serif;
+            font-weight: 400;
+        }
+
+        .banner-order>.kata>a>button {
+            color: white;
+            background-color: green;
+            width: 240px;
+            height: 60px;
+            border-radius: 20px;
+            align-self: start;
+            margin-right: 130px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .info>div {
+            font-size: small;
+            margin: 50px;
+        }
+
+        .info>div>h1 {
+            color: #000;
+            font-family: "Montserrat", Sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .info>div>h2 {
+            color: rgba(0, 0, 0, .85);
+            font-family: "Montserrat", Sans-serif;
+            font-size: 15px;
+            font-weight: 100;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Montserrat", Sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gnb flex-row">
+        <div class="gnb-logo">
+            <img width="80" src="/static/image/logo warbund.jpg">
+        </div>
+        <div class="gnb-tab flex-row">
+            <a href="home">Home</a>
+            <a href="menu">Menu</a>
+            <a href="galeri">Galeri</a>
+            <a href="kontak">Kontak</a>
+            <a href="order"><button>Order</button></a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="isi flex-col">
+            <h1>Galeri</h1>
+        </div>
+    </div>
+
+    <div class="foto flex-row">
+        <div class="foto-kiri flex-col">
+            <img src="/static/image/isi galeri/Gambar1.jpg">
+            <img src="/static/image/isi galeri/Gambar2.jpg">
+            <img src="/static/image/isi galeri/Gambar3.jpg">
+            <img src="/static/image/isi galeri/Gambar4.jpg">
+        </div>
+        <div class="foto-kanan flex-col">
+            <img src="/static/image/isi galeri/Gambar5.jpg">
+            <img src="/static/image/isi galeri/Gambar6.jpg">
+            <img src="/static/image/isi galeri/Gambar7.jpg">
+        </div>
+    </div>
+
+    <div class="banner-menu flex-col">
+        <p>Dapatkan Katalog<br>Menu Lengkapnya</p>
+        <a href="menu"><button>Klik Disini</button></a>
+    </div>
+
+    <div class="banner-order flex-row">
+        <img src="/static/image/grilled-chicken-steak-vegetables-dark-wood-background.jpg">
+        <div class="kata flex-col">
+            <h1>Order sekarang juga</h1>
+            <h2>Nikmati makan bersama keluarga dengan pemandangan alam <br> yang indah dan sejuk.</h2>
+            <a href="order"><button>Order Disini</button></a>
+        </div>
+    </div>
+
+    <div class="info flex-row">
+        <div class="alamat">
+            <h1>alamat</h1>
+            <h2>Jl. bumi perkemahan kiarapayung </h2>
+            <h2>50M lewat exit tol jatinangor</h2>
+        </div>
+        <div class="Email">
+            <h1>Email</h1>
+            <h2>info@Warbund.com </h2>
+            <h2>reservasi@Warbund.com</h2>
+        </div>
+        <div class="Kontak">
+            <h1>Kontak</h1>
+            <h2>0852 2124 1125</h2>
+            <h2>0896 1014 5465</h2>
+        </div>
+        <div class="Jam_Operasional">
+            <h1>Jam Operasional</h1>
+            <h2>Weekday : 08.00-17.00</h2>
+            <h2>Weekend : 08.00-17.00</h2>
+        </div>
+    </div>
+    <hr>
+    <p>Copyright © 2024 Waroeng Boenderan By: Fahmi, Adrian, Fadilla, Wiwin</p>
+
+</body>
+
+</html>

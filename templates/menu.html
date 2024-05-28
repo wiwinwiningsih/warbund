@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Serif+Display:ital@1&family=League+Gothic&family=Noto+Serif+Display:wght@100&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @import url("/static/css/default.css");
+        @import url("/static/css/gnb.css");
+
+        .div>a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .banner {
+            width: 100%;
+            height: 750px;
+            background-image: url("/static/image/gambar\ menu\ jadi.png");
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .banner>.isi>h1 {
+            font-size: 80px;
+            margin-top: 250px;
+            font-family: "Alex Brush", cursive;
+            color: white;
+            font-size: 70px;
+            font-weight: 500;
+        }
+
+        .isi_makanan {
+            width: 100%;
+            height: 3600px;
+            background-image: url("/static/image/background\ kayu.jpeg");
+        }
+
+
+        .mt {
+            width: 400px;
+            height: 150px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+        }
+
+        .mt1 {
+            margin: 20px;
+        }
+
+        .mt1>img {
+            width: 380px;
+            height: 300px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .text {
+            width: 380px;
+            height: 80px;
+            background-color: white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .mm {
+            width: 400px;
+            height: 150px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            margin-top: 50px;
+            font-family: "Alex Brush", cursive;
+        }
+
+        .makanan {
+            margin: 35px;
+        }
+
+        .makanan>img {
+            width: 250px;
+            height: 180px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text_makanan {
+            width: 250px;
+            height: 75px;
+            background-color: white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .text_makanan>h3 {
+            margin-bottom: 15px;
+            font-family: "Montserrat", Sans-serif;
+        }
+
+        .text_makanan>p {
+            margin-top: 5px;
+            font-family: "Montserrat", Sans-serif;
+        }
+
+        .mmi {
+            width: 400px;
+            height: 150px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+
+        .banner-menu {
+            width: 100%;
+            height: 350px;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-image: url("/static/image/marshal-quast-v69MsNF7FAU-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner-menu>p {
+            color: white;
+            font-size: 40px;
+            font-weight: 700;
+            align-self: start;
+            margin-left: 50px;
+            margin-top: 100px;
+            font-family: "Montserrat", Sans-serif;
+        }
+
+        .banner-menu>a>button {
+            background-color: green;
+            color: white;
+            width: 240px;
+            height: 60px;
+            border-radius: 20px;
+            align-self: start;
+            margin-left: 50px;
+            margin-bottom: 70px;
+            cursor: pointer;
+        }
+
+        .banner-order {
+            width: 100%;
+            height: 350px;
+            background-image: url("/static/image/order.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner-order>img {
+            height: 340px;
+            background-size: cover;
+            background-position: center;
+            margin-left: 50px;
+            border-radius: 20px;
+        }
+
+        .banner-order>.kata>h1 {
+            color: white;
+            align-self: start;
+            margin-left: 50px;
+            font-size: 35px;
+            font-weight: 600;
+            font-family: "Montserrat", Sans-serif;
+        }
+
+        .banner-order>.kata>h2 {
+            color: white;
+            align-self: start;
+            margin-left: 50px;
+            font-size: 15px;
+            font-family: "Montserrat", Sans-serif;
+            font-weight: 400;
+        }
+
+        .banner-order>.kata>a>button {
+            color: white;
+            background-color: green;
+            width: 240px;
+            height: 60px;
+            border-radius: 20px;
+            align-self: start;
+            margin-right: 130px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .info>div {
+            font-size: small;
+            margin: 50px;
+        }
+
+        .info>div>h1 {
+            color: #000;
+            font-family: "Montserrat", Sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .info>div>h2 {
+            color: rgba(0, 0, 0, .85);
+            font-family: "Montserrat", Sans-serif;
+            font-size: 15px;
+            font-weight: 100;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Montserrat", Sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gnb flex-row">
+        <div class="gnb-logo">
+            <img width="80" src="/static/image/logo warbund.jpg">
+        </div>
+        <div class="gnb-tab flex-row">
+            <a href="/">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="order.html"><button>Order</button></a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="isi flex-col">
+            <h1>Menu Warbund</h1>
+        </div>
+    </div>
+
+    <div class="isi_makanan flex-col">
+        <div class="mm">
+            <h1>Menu Terlaris</h1>
+        </div>
+        <div class="menu_makanan flex-row">
+            <div class="makanan flex-col">
+                <img src="/static/image/ayam_goreng.png">
+                <div class="text_makanan flex-col">
+                    <h3>Ayam kampung Goreng</h3>
+                    <p>Rp. 18.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/ayam_bakar.png">
+                <div class="text_makanan flex-col">
+                    <h3>ayam kampung bakar</h3>
+                    <p>Rp. 20.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/peda_reuceuh.png">
+                <div class="text_makanan flex-col">
+                    <h3>Peda Reuceuh</h3>
+                    <p>Rp. 12.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/garang_asem.jpeg">
+                <div class="text_makanan flex-col">
+                    <h3>Garang asem</h3>
+                    <p>Rp. 30.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mm">
+            <h1>Menu Makanan</h1>
+        </div>
+        <div class="menu_makanan flex-row">
+            <div class="makanan flex-col">
+                <img src="/static/image/ikan kembung.png">
+                <div class="text_makanan flex-col">
+                    <h3>Ikan Kembung</h3>
+                    <p>Rp. 12.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/ayam pejantan bakar.png">
+                <div class="text_makanan flex-col">
+                    <h3>Ayam Pejantan Bakar</h3>
+                    <p>Rp. 15.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/ayam pejantan goreng.jpeg">
+                <div class="text_makanan flex-col">
+                    <h3>Ayam Pejantan Goreng</h3>
+                    <p>Rp. 12.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/asin sepat.png">
+                <div class="text_makanan flex-col">
+                    <h3>Ikan Sepat</h3>
+                    <p>Rp. 5.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_makanan flex-row">
+            <div class="makanan flex-col">
+                <img src="/static/image/asin cumi.png">
+                <div class="text_makanan flex-col">
+                    <h3>Asin Cumi</h3>
+                    <p>Rp. 12.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/bebek goreng.jpeg">
+                <div class="text_makanan flex-col">
+                    <h3>Bebek Goreng</h3>
+                    <p>Rp. 20.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/bebek bakar.jpeg">
+                <div class="text_makanan flex-col">
+                    <h3>Bebek Bakar</h3>
+                    <p>Rp. 25.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/sop iga.png">
+                <div class="text_makanan flex-col">
+                    <h3>Sop Iga</h3>
+                    <p>Rp. 30.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_makanan flex-row">
+            <div class="makanan flex-col">
+                <img src="/static/image/sambel.png">
+                <div class="text_makanan flex-col">
+                    <h3>Sambal Terasi Dadak</h3>
+                    <p>Rp. 5.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/nasi goreng biasa.jpeg">
+                <div class="text_makanan flex-col">
+                    <h3>Nasi Goreng Biasa</h3>
+                    <p>Rp. 15.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/nasi goreng cikur.jpeg">
+                <div class="text_makanan flex-col">
+                    <h3>Nasi Goreng cikur</h3>
+                    <p>Rp. 8.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/nasi goreng special.jpeg">
+                <div class="text_makanan flex-col">
+                    <h3>Nasi Goreng Spesial</h3>
+                    <p>Rp. 18.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_makanan flex-row">
+            <div class="makanan flex-col">
+                <img src="/static/image/nasi putih.jpeg">
+                <div class="text_makanan flex-col">
+                    <h3>Nasi Putih</h3>
+                    <p>Rp. 6.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/sate kambing.png">
+                <div class="text_makanan flex-col">
+                    <h3>Sate Kambing</h3>
+                    <p>Rp. 35.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/babat.png">
+                <div class="text_makanan flex-col">
+                    <h3>Babat/Tamusu</h3>
+                    <p>Rp. 12.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/ati ampela.png">
+                <div class="text_makanan flex-col">
+                    <h3>Ati Ampela</h3>
+                    <p>Rp. 5.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_makanan flex-row">
+            <div class="makanan flex-col">
+                <img src="/static/image/asin peda.png">
+                <div class="text_makanan flex-col">
+                    <h3>Asin Peda</h3>
+                    <p>Rp. 10.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/tempe.png">
+                <div class="text_makanan flex-col">
+                    <h3>Tempe</h3>
+                    <p>Rp. 1.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/tahu.png">
+                <div class="text_makanan flex-col">
+                    <h3>Tahu</h3>
+                    <p>Rp. 1.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/karedok.png">
+                <div class="text_makanan flex-col">
+                    <h3>Karedok</h3>
+                    <p>Rp. 8.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_makanan flex-row">
+            <div class="makanan flex-col">
+                <img src="/static/image/lotek.png">
+                <div class="text_makanan flex-col">
+                    <h3>Lotek</h3>
+                    <p>Rp. 8.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/kangkung.png">
+                <div class="text_makanan flex-col">
+                    <h3>Tumis Kangkung</h3>
+                    <p>Rp. 8.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/genjer.png">
+                <div class="text_makanan flex-col">
+                    <h3>Tumis Genjer</h3>
+                    <p>Rp. 8.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/nila bakar.png">
+                <div class="text_makanan flex-col">
+                    <h3>Nila Bakar</h3>
+                    <p>Rp. 15.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_makanan flex-row">
+            <div class="makanan flex-col">
+                <img src="/static/image/nila goreng.jpeg">
+                <div class="text_makanan flex-col">
+                    <h3>Nila Goreng</h3>
+                    <p>Rp. 12.000</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="mmi">
+            <h1>Menu Minuman</h1>
+        </div>
+        <div class="menu_makanan flex-row">
+            <div class="makanan flex-col">
+                <img src="/static/image/es jeruk.png">
+                <div class="text_makanan flex-col">
+                    <h3>Es Jeruk</h3>
+                    <p>Rp. 8.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/aneka jus.png">
+                <div class="text_makanan flex-col">
+                    <h3>Aneka Juice</h3>
+                    <p>Rp. 12.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/aneka jus.png">
+                <div class="text_makanan flex-col">
+                    <h3>Juice Mix</h3>
+                    <p>Rp. 15.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/es teh.png">
+                <div class="text_makanan flex-col">
+                    <h3>Es Teh Manis</h3>
+                    <p>Rp. 5.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_makanan flex-row">
+            <div class="makanan flex-col">
+                <img src="/static/image/teh tawar.jpeg">
+                <div class="text_makanan flex-col">
+                    <h3>Es Teh Tawar</h3>
+                    <p>Rp. 3.000</p>
+                </div>
+            </div>
+            <div class="makanan flex-col">
+                <img src="/static/image/mango yakult.png">
+                <div class="text_makanan flex-col">
+                    <h3>Manggo Yakult</h3>
+                    <p>Rp. 13.000</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="banner-menu flex-col">
+        <p>Dapatkan Katalog <br>Menu Lengkapnya</p>
+        <a href="menu"><button>Klik Disini</button></a>
+    </div>
+
+    <div class="banner-order flex-row">
+        <img src="/static/image/grilled-chicken-steak-vegetables-dark-wood-background.jpg">
+        <div class="kata flex-col">
+            <h1>Order sekarang juga</h1>
+            <h2>Nikmati makan bersama keluarga dengan pemandangan alam <br>yang indah dan sejuk.</h2>
+            <a href="order"><button>Order Disini</button></a>
+        </div>
+    </div>
+
+    <div class="info flex-row">
+        <div class="alamat">
+            <h1>alamat</h1>
+            <h2>Jl. bumi perkemahan kiarapayung </h2>
+            <h2>50M lewat exit tol jatinangor</h2>
+        </div>
+        <div class="Email">
+            <h1>Email</h1>
+            <h2>info@Warbund.com </h2>
+            <h2>reservasi@Warbund.com</h2>
+        </div>
+        <div class="Kontak">
+            <h1>Kontak</h1>
+            <h2>0852 2124 1125</h2>
+            <h2>0896 1014 5465</h2>
+        </div>
+        <div class="Jam_Operasional">
+            <h1>Jam Operasional</h1>
+            <h2>Weekday : 08.00-17.00</h2>
+            <h2>Weekend : 08.00-17.00</h2>
+        </div>
+    </div>
+    <hr>
+    <p>Copyright © 2024 Waroeng Boenderan By: Fahmi, Adrian, Fadilla, Wiwin</p>
+</body>
+
+</html>

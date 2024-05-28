@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>WARBUND</title>
+    <style>
+        .navbar {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            border-bottom: 0.5px solid lightgray;
+        }
+
+        .navbar>img {
+            width: 160px;
+            padding-left: 20px;
+        }
+
+        .navbar>button {
+            border: none;
+            color: black;
+            background-color: #25d366;
+            border: 1px solid black;
+            padding: 15px 32px;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        .middle {
+            width: 100%;
+            height: 468px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .order {
+            text-align: center;
+        }
+
+        .order>p {
+            font-size: 18px;
+            line-height: 26px;
+            font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
+        .order>a>button {
+            border: none;
+            color: white;
+            background-color: #128c7e;
+            padding: 15px 32px;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 506px;
+            background-color: #111b21;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .flex-col {
+            list-style-type: none;
+            padding: 30px;
+            padding-left: 40px;
+            margin-left: 20px;
+        }
+
+        .footer>img {
+            width: 220px;
+            margin-right: auto;
+            margin-left: 150px;
+            margin-top: -250px;
+        }
+
+        .tags {
+            display: flex;
+            margin-right: 200px;
+            margin-top: -100px;
+        }
+
+        .tags .flex-col {
+            list-style-type: none;
+            padding: 30px;
+            padding-left: 40px;
+            margin-left: 20px;
+
+        }
+
+        .tags .flex-col span {
+            color: #F0F4F9;
+            font-size: 12px;
+            font-family: Helvetica, Arial, sans-serif;
+            padding-bottom: 32px;
+            direction: ltr;
+            line-height: 5;
+            font-weight: bold;
+        }
+
+        .tags .flex-col p {
+            color: #ffffff;
+            font-size: 18px;
+            font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin: 5px 0;
+            padding-right: 8px;
+            line-height: 25px;
+            letter-spacing: -0.01em;
+            padding-top: 10px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+            background-color: #111b21;
+            margin-top: 0;
+            position: relative;
+            width: 100%;
+            height: 50px;
+        }
+
+        .border-line {
+            position: absolute;
+            top: -100px;
+            left: 7%;
+            width: 85%;
+            border-top: 0.05px solid #33463f;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bottom1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: #F0F4F9;
+            font-size: 12px;
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: left;
+            position: absolute;
+            left: 5.5%;
+            bottom: 60px;
+        }
+
+        .bottom1 span {
+            display: flex;
+            flex-basis: min-content;
+            flex-grow: 1;
+            justify-content: center;
+            direction: ltr;
+            line-height: 1.34;
+        }
+
+        .bottom1 span:last-child {
+            margin-left: 50px; 
+        }
+
+        .sosmed {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sosmed .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -95px;
+        }
+
+        .sosmed .icon i {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #1c1e21;
+            border: 0.5px solid #fff;
+            margin-right: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="/static/image/whatsapp.png">
+        <button class="button button1">Order</button>
+    </div>
+    <div class="middle">
+        <div class="order">
+            <p>Chat di WhatsApp dengan +62 852-2124-1125</p>
+            <a href="https://wa.link/75ki9r"><button class="button button1">Lanjut ke Chat</button></a>
+            <p style="color:#5E5E5E;">Hallo, Saya mau order di Warbund.com</p>
+        </div>
+    </div>
+    <div class="footer">
+        <img width="160" src="/static/image/whatsapp.png">
+        <div class="tags flex-row">
+            <ul class="flex-col">
+                <span>Yang kami lakukan</span>
+                <p>Fitur</p>
+                <p>Blog</p>
+                <p>Keamanan</p>
+                <p>Untuk Bisnis</p>
+            </ul>
+            <ul class="flex-col">
+                <span>Siapa kami</span>
+                <p>Tentang Kami</p>
+                <p>Karier</p>
+                <p>Pusat Merek</p>
+                <p>Privasi</p>
+            </ul>
+            <ul class="flex-col">
+                <span>Gunakan WhatsApp</span>
+                <p>Android</p>
+                <p>iPhone</p>
+                <p>Mac/PC</p>
+                <p>WhatsApp Web</p>
+            </ul>
+            <ul class="flex-col">
+                <span>Perlu Bantuan</span>
+                <p>Hubungi Kami</p>
+                <p>Pusat Bantuan</p>
+                <p>Unduh</p>
+                <p>Imbauan</p>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="border-line"></div>
+        <div class="bottom1 flex-row">
+            <span class="copyright">2024 © WhatsApp<br>LLC</span>
+            <span>Ketentuan dan Kebijakan Privasi</span>
+        </div>
+        <div class="sosmed">
+            <div class="icon flex-row">
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

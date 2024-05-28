@@ -1,0 +1,42 @@
+.gnb {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+}
+
+.gnb-logo {
+  margin-left: 25px;
+}
+
+.gnb-tab {
+  margin-left: auto;
+}
+
+.gnb-tab > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 40px;
+}
+
+.gnb-tab > a > button {
+  font-family: Montserrat, Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.3em;
+  letter-spacing: 1.53px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  fill: #fff;
+  color: #fff;
+  background-color: #d51f26;
+  border-style: solid;
+  border-width: 0;
+  border-radius: 5px;
+  padding: 4px 7px;
+  cursor: pointer;
+}
